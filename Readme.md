@@ -42,3 +42,6 @@ IMPORTANT: You will need to set two Django settings in order for GEOS and GDAL t
 GEOS_LIBRARY_PATH = '/app/.geodjango/geos/lib/libgeos_c.so'
 
 GDAL_LIBRARY_PATH = '/app/.geodjango/gdal/lib/libgdal.so'
+
+
+and run heroku config:add LD_LIBRARY_PATH='.heroku/vendor/lib:.geodjango/proj4/lib' to allow the proj4 library to be loaded
