@@ -45,5 +45,8 @@ try:
 except Exception:
     print 'Unexpected error:', sys.exc_info()
 
+GEOS_LIBRARY_PATH = '/app/.geodjango/geos/lib/libgeos_c.so'
+GDAL_LIBRARY_PATH = '/app/.geodjango/gdal/lib/libgdal.so'
+
 EOF
 
