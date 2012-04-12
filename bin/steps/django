@@ -38,7 +38,7 @@ try:
             'PORT': url.port,
         })
         if url.scheme == 'postgres':
-            DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+            DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 
         if url.scheme == 'mysql':
             DATABASES['default']['ENGINE'] = 'django.db.backends.mysql'
